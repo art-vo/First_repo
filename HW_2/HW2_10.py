@@ -15,4 +15,14 @@
 Використовуйте умовну конструкцію if для перевірки, чи middle_name не порожній.
 Для створення рядка з повним іменем використовуйте f-рядок для вставки значень змінних.'''
 
-def get_fullname
+first_name = input("Enter your first name:\n")
+last_name = input("Enter your last name:\n")
+middle_name = input("Enter your middle name:\n")
+
+def get_fullname (first_name, last_name, middle_name = ""):
+    if middle_name == "":
+        return f"{first_name} {last_name}"
+    else: 
+        return f"{first_name} {middle_name} {last_name}"
+
+print(get_fullname(first_name, last_name, middle_name))

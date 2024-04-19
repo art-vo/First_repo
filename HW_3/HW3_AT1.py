@@ -22,13 +22,14 @@ date_string = "2024.01.01"
 
 def string_to_date(date_string):
     return datetime.strptime(date_string, "%Y.%m.%d").date()
-
+    
 converted_date = string_to_date(date_string)
 print(converted_date)
 
 
 def date_to_string(converted_date):
-    return datetime.strftime(converted_date, "%Y.%m.%d")
+    #return datetime.strftime(converted_date, "%Y.%m.%d")
+    return converted_date.strftime("%Y.%m.%d")
 
 date_string = date_to_string(converted_date)
 print(date_string)

@@ -50,4 +50,4 @@ def prepare_user_list(user_data):
     return prepared_list                                                                            # передаємо новий список на "вихід" функції
 
 prepared_users = prepare_user_list(users)
-print(prepared_users)
+print(prepared_users) 

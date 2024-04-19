@@ -12,7 +12,8 @@
         Виконання такого коду призведе до наступного виведення:
 
         2024-01-01
-        2024.01.01
+        2024.01.01 
+
 """
 
 from datetime import datetime
@@ -31,4 +32,5 @@ def date_to_string(converted_date):
 
 date_string = date_to_string(converted_date)
 print(date_string)
+
     
